@@ -19,7 +19,40 @@ body {
 }
 
 .alles {
-    background: linear-gradient(var(--ac3), var(--ac2));
+    /* background: linear-gradient(var(--ac3), var(--ac2)); */
+
+/* 
+--- Hintergrund Muster karriert ---
+
+
+background-color: #ddd;
+    background-image: 
+  linear-gradient(90deg, 
+        transparent 50%, 
+        rgba(191, 64, 64, 0.285) 50%, 
+        hsla(0, 50%, 50%, .75) 50%)
+  ,
+  linear-gradient(0deg, 
+        transparent 50%, 
+        hsla(0, 50%, 50%, 0.285) 50%, 
+        rgba(83, 64, 191, .75) 50%)
+,
+  linear-gradient(45deg, 
+        transparent 50%, 
+        rgba(255, 255, 255, 0.285) 50%, 
+        hsla(0, 50%, 50%, .75) 50%)
+;
+background-size: 200px 200px;
+
+ */
+
+ background-image: url("IMG_7250(2).jpg");
+ background-repeat:no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+
+
     min-height: 100vh;
     width: 100%;
     padding: 0 7.5px 15px;
@@ -34,13 +67,34 @@ body {
     max-width: 600px;
     width: 100%;
     padding: 0px 15px 15px;
-    border-radius: 25px;
+    border-radius: 15px;
     margin: 20px 0 0;
+    box-shadow: .5px .5px 5px black;
+}
+
+.durchsichtig {
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 5vh;
+    color: white;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-shadow: .5px .5px 5px var(--ac3);
+    font-size: 50px;
+    font-weight: 400;
+    margin-left: 15px;
 }
 
 .bild {
     width: 100%;
     border-radius: 10px;
+    margin-top: 12.5px;
 }
 
 .bilder_grid {
@@ -67,11 +121,12 @@ body {
 
 .Logoimg {
     padding: 15px;
+    filter: drop-shadow(2px 4px 4px black);
 }
 
 .logoheader {
-    padding: 15px 0 0;
-    width: 100vw;
+    padding: 0 0 0;
+    width: 100%;
     background-attachment: fixed;
     background-size: cover;
     background-blend-mode: multiply;
@@ -101,9 +156,9 @@ li {
 }
 
 .buttons {
-    padding: 12.5px 15px;
+    padding: 10px 12.5px;
     border: none;
-    border-radius: 10px;
+    border-radius: 7.5px;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -164,8 +219,8 @@ li {
 }
 
 .sticky {
-    position: sticky;
-    bottom: 25px;
+    /* position: sticky;
+    bottom: 25px; */
     display: flex;
     justify-content: flex-start;
     width: 100%;
@@ -176,8 +231,8 @@ li {
 }
 
 .sticky_above {
-    position: sticky;
-    bottom: 90px;
+    /* position: sticky;
+    bottom: 90px; */
     display: flex;
     justify-content: flex-start;
     width: 100%;
@@ -188,8 +243,8 @@ li {
 }
 
 .white {
-    padding-bottom: 80px;
-    margin-bottom: -80px;
+    padding-bottom: 75px;
+    margin-bottom: -75px;
 }
 
 @media screen and (max-width: 350px) {
