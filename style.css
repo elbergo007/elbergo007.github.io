@@ -94,7 +94,7 @@ background-size: 200px 200px;
     height: calc(100vh - 30px);
     display: flex;
     flex-direction: column;
-    padding: 15px 0 5vh;
+    padding: 15px 0 10vh;
     color: white;
     justify-content: space-between;
     align-items: flex-start;
@@ -263,6 +263,15 @@ li {
 .white {
     padding-bottom: 75px;
     margin-bottom: -75px;
+}
+
+@media screen and (max-width: 400px) {
+    .durchsichtig {
+        height: calc(100vh - 100px);
+    }
+    h1 {
+        font-size: 35px;
+    }
 }
 
 @media screen and (max-width: 350px) {
